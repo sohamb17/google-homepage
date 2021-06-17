@@ -9,8 +9,7 @@
 <body>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">    
-    <style>
+      <style>
         .google-logo {
             position: relative;
             top: 250px;
@@ -58,6 +57,27 @@
         a:hover {
             text-decoration: underline;
         }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            word-spacing: 15px;
+            position: absolute;
+            top: 1px;
+            right: 25px;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            opacity: 0.8;
+        }
+
+        li {
+            display: inline;
+        }
+
+        .material-icons.md-36 {
+            font-size: 36px;
+        }
     </style>
     <main>
         <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
@@ -69,6 +89,16 @@
         <p>
             Google offered in: <a href="#">हिन्दी</a> <a href="#">বাংলা</a> <a href="#">తెలుగు</a> <a href="#">मराठी</a> <a href="#">தமிழ்</a> <a href="#">ગુજરાતી</a> <a href="#">ಕನ್ನಡ</a> <a href="#">മലയാളം</a> <a href="#">ਪੰਜਾਬੀ</a>
         </p>
+        <ul>
+            <li><a style="color: black;" href="#">Gmail</a></li>
+            <li><a style="color: black;" href="#">Images</a></li>
+            <li style="position: relative; top: 7px; left: 10px;"><a style="color: black;" href="#"><span class="material-icons">
+                apps
+                </span></a></li>
+            <li style="position: relative; top: 13px; left: 8px;"><a style="color: black;" href="#"><span class="material-icons md-36">
+                account_circle
+                </span></a></li>
+        </ul>
     </main>
 </body>
 </html>
