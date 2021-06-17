@@ -23,10 +23,12 @@
             display: block;
             margin: auto;
             border-radius: 25px;
-            border: 1px solid gray;
+            border: 1px solid rgb(230, 230, 230);
             width: 578px;
             height: 42.2px;
-            opacity: 0.25;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            opacity: 0.9;
         }
 
         .google-button {
@@ -44,10 +46,11 @@
 
         p {
             position: relative;
-            top: 280px;
-            text-align: center;
+            top: 292px;
             font-size: 13px;
             font-family: Arial, Helvetica, sans-serif;
+            display: inline;
+            left: 37.7%;
         }
 
         a:link {
@@ -62,6 +65,27 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
+        }
+
+        li {
+            display: inline;
+        }
+
+        .material-icons.md-36 {
+            font-size: 36px;
+        }
+
+        div {
+            background-color: rgb(240, 240, 240);
+            height: 45px;
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+            margin-left: -10px;
+            border: none;
+        }
+
+        #nav-bar {
             word-spacing: 15px;
             position: absolute;
             top: 1px;
@@ -71,12 +95,22 @@
             opacity: 0.8;
         }
 
-        li {
-            display: inline;
+        #footer-left {
+            word-spacing: 20px;
+            position: absolute;
+            bottom: 14px;
+            left: 35px;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        .material-icons.md-36 {
-            font-size: 36px;
+        #footer-right {
+            word-spacing: 25px;
+            position: absolute;
+            bottom: 14px;
+            right: 35px;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
         }
     </style>
     <main>
@@ -87,9 +121,9 @@
             <button class="google-button" type="submit" style="top: 270px; right: -70px; width: 145px;">I'm Feeling Lucky</button>
         </form>
         <p>
-            Google offered in: <a href="#">हिन्दी</a> <a href="#">বাংলা</a> <a href="#">తెలుగు</a> <a href="#">मराठी</a> <a href="#">தமிழ்</a> <a href="#">ગુજરાતી</a> <a href="#">ಕನ್ನಡ</a> <a href="#">മലയാളം</a> <a href="#">ਪੰਜਾਬੀ</a>
+            Google offered in: <p style="word-spacing: 6px;"><a href="#">हिन्दी</a> <a href="#">বাংলা</a> <a href="#">తెలుగు</a> <a href="#">मराठी</a> <a href="#">தமிழ்</a> <a href="#">ગુજરાતી</a> <a href="#">ಕನ್ನಡ</a> <a href="#">മലയാളം</a> <a href="#">ਪੰਜਾਬੀ</a></p>
         </p>
-        <ul>
+        <ul id="nav-bar">
             <li><a style="color: black;" href="#">Gmail</a></li>
             <li><a style="color: black;" href="#">Images</a></li>
             <li style="position: relative; top: 7px; left: 10px;"><a style="color: black;" href="#"><span class="material-icons">
@@ -99,6 +133,24 @@
                 account_circle
                 </span></a></li>
         </ul>
+        <div style="position: absolute; bottom: 45px; border-bottom: 1px solid rgb(218, 218, 218);">
+            <ul id="footer-left">
+                <li><a style="color: gray;" href="#">India</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul id="footer-left">
+                <li><a style="color: gray;" href="#">About</a></li>
+                <li><a style="color: gray;" href="#">Advertising</a></li>
+                <li><a style="color: gray;" href="#">Business</a></li>
+                <li><a style="color: gray; word-spacing: 1px;" href="#">How Search works</a></li>
+            </ul>
+            <ul id="footer-right">
+                <li><a style="color: gray;" href="#">Privacy</a></li>
+                <li><a style="color: gray;" href="#">Terms</a></li>
+                <li><a style="color: gray;" href="#">Settings</a></li>
+            </ul>
+        </div>
     </main>
 </body>
 </html>
